@@ -184,6 +184,8 @@ input:focus {
 .container {
     padding: 15px 10px 15px 10px;
     display: grid;
+    height: 90%;
+    width: 95%;
     grid-template-rows: 1fr 3fr 1fr;
 }
 
@@ -207,4 +209,49 @@ input:focus {
 
 .icon-container > img {
     margin-left: 15px;
+}
+
+.side-content {
+    padding: 10px 10px 10px 10px;
+}
+
+.announcements > div {
+    display: grid;
+    grid-template-rows: 1fr 0.1fr 1fr 0.1fr 1fr;
+    background-color: white;
+    border-radius: 16px;
+    padding: 10px 10px 10px 10px;
+}
+
+.announcements > div > div:nth-child(2n-1) {
+    padding: 10px 10px 10px 10px;
+}
+
+.a-main {
+    font-size: 12px;
+    margin: 2px 0px 2px 0px;
+}
+
+#a-sub {
+    font-size: 10px;
+    color: lightgray;
+}
+
+.separator {
+    width: 95%;
+    height: 0.1px;
+    background-color: lightgray;
+    place-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.white-bg {
+    background-color: white;
+    border-radius: 10px;
+    height: 300px;
+}
+
+.white-bg > div > div > p {
+    font-size: 8px
 }
