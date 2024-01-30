@@ -49,5 +49,64 @@ img {
 }
 
 .dashboard > img {
-    place-self: center  ;
+    place-self: center;
+}
+
+.content {
+    display: grid;
+    grid-template-rows: 1fr 4.5fr;
+}
+
+.top-content {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.content > * {
+    padding-left: 40px;
+    padding-right: 40px
+}
+
+.top-content > div:nth-child(1) {
+    display: grid;
+    grid-template-columns: 1fr 10fr 2fr 1fr 1fr 3fr 30px;
+}
+
+input {
+    width: 100%;
+    height: 40%;
+    border-radius: 16px;
+    border: none;
+    background-color: lightgray;
+}
+
+input:focus {
+    outline-color: darkgray;
+    outline-width: 1px;
+}
+
+.top-content > div:nth-child(1) > * {
+    place-self: center;
+}
+
+.top-content > div:nth-child(1) > p {
+    align-self: center;
+    justify-self: start;
+    margin: 0px 0px 0px 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.top-content > div:nth-child(1) > img {
+    height: 40%;
+    width: 40%;
+}
+
+.top-content > div:nth-child(1) > img:nth-child(5) {
+    height: 100%;
+    width: 100%;
+}
+
+.main-content {
+    background-color: whitesmoke;
 }
