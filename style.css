@@ -5,32 +5,49 @@ body {
     margin: 0;
 }
 
+p {
+    margin:0px 0px 0px 0px;
+}
+
 .filter-white {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(43deg) brightness(102%) contrast(102%);
-}
-
-.selection {
-    display: grid;
-    grid-template-columns: 30px 200px;
-    margin: 10px 0px 0px 1rem;
-}
-
-.selection > * {
-    display: inline;
-    align-self: center;
-}
-
-.selection > p {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 4px 0px 0px 10px;
-    color: white
 }
 
 body > div {
     height: 100vh;
 }
 
+img {
+    height: 30px;
+    width: 30px;
+}
+
 .dashboard {
     background-color: #22d3ee;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 50px 100px repeat(10, 40px);
+}
+
+.dashboard > img:first-child {
+    height: 100%;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.dashboard > p {
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+    align-self: center;  
+}
+
+.dashboard > p:nth-child(2) {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.dashboard > img {
+    place-self: center  ;
 }
