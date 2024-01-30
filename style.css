@@ -110,10 +110,26 @@ input:focus {
 .top-content > div:nth-child(2) {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
+    place-items: center;
 }
 
-.top-content > div:nth-child(2) {
-    place-items: center;
+.top-content > div:nth-child(2) > img{
+    height: 6rem;
+    width: 6rem;
+}
+
+.top-content > div:nth-child(2) > div{
+    justify-self: start;
+}
+
+.top-content > div:nth-child(2) > div > p{ 
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.top-content > div:nth-child(2) > div > p:last-child{ 
+    margin-top: 8px 0px 0px 0px;
+    font-size: 24px;
 }
 
 .blue-button {
@@ -126,6 +142,11 @@ input:focus {
     font-weight: bold;
 }
 
+.blue-button:hover {
+    background-color: lightblue;
+    border:1px lightgray solid;
+    cursor: pointer;
+}
 .main-content {
     background-color: whitesmoke;
 }
