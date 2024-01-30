@@ -5,10 +5,32 @@ body {
     margin: 0;
 }
 
+.filter-white {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(43deg) brightness(102%) contrast(102%);
+}
+
+.selection {
+    display: grid;
+    grid-template-columns: 30px 200px;
+    margin: 10px 0px 0px 1rem;
+}
+
+.selection > * {
+    display: inline;
+    align-self: center;
+}
+
+.selection > p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 4px 0px 0px 10px;
+    color: white
+}
+
 body > div {
     height: 100vh;
 }
 
 .dashboard {
-    background-color: blue;
+    background-color: #22d3ee;
 }
