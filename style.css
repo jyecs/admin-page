@@ -62,7 +62,7 @@ img {
     grid-template-rows: 1fr 2fr;
 }
 
-.content > * {
+.content > .top-content {
     padding-left: 40px;
     padding-right: 40px
 }
