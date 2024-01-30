@@ -1,3 +1,14 @@
 body {
     font-family: "Roboto";
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin: 0;
+}
+
+body > div {
+    height: 100vh;
+}
+
+.dashboard {
+    background-color: blue;
 }
