@@ -26,7 +26,7 @@ img {
     background-color: #22d3ee;
     display: grid;
     grid-template-columns: 2fr 4fr;
-    grid-template-rows: 50px 100px repeat(10, 40px);
+    grid-template-rows: 50px 100px repeat(6, 40px) 80px repeat(4, 40px);
 }
 
 .dashboard > img:first-child {
@@ -36,7 +36,7 @@ img {
 }
 
 .dashboard > p {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bolder;
     color: white;
     align-self: center;  
